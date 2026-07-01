@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from alchemy.potions import strength_potion, healing_potion
 
+
 def main() -> None:
     print("=== Distillation 0 ===")
     print("Direct access to alchemy/potions.py")
