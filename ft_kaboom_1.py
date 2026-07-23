@@ -8,7 +8,7 @@ def main():
         res = dark_spell_record("Curse", "bats, arsenic")
         print(res)
     except (ImportError, AttributeError) as e:
-        print("\n💥 KABOOM! Your alchemist laboratory has just exploded! 💥")
+        print("\nKABOOM! Your alchemist laboratory has just exploded!")
         print(f"Error Details: {e}")
 
 
