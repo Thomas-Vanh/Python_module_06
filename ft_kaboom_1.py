@@ -4,7 +4,7 @@ def main():
     try:
         # Accessing dark_spellbook triggers top-level circular import failure
         from alchemy.grimoire.dark_spellbook import dark_spell_record
-        
+
         res = dark_spell_record("Curse", "bats, arsenic")
         print(res)
     except (ImportError, AttributeError) as e:
