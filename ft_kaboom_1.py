@@ -1,11 +1,10 @@
 
-def main():
+def main() -> None:
     print("--- Kaboom 1 ---")
     try:
-        # Accessing dark_spellbook triggers top-level circular import failure
         from alchemy.grimoire.dark_spellbook import dark_spell_record
 
-        res = dark_spell_record("Curse", "bats, arsenic")
+        res: str = dark_spell_record("Curse", "bats, arsenic")
         print(res)
     except (ImportError, AttributeError) as e:
         print("\nKABOOM! Your alchemist laboratory has just exploded!")
